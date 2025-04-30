@@ -3,7 +3,7 @@ package dio.minha_primeira_web_api.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity
+@Entity(name = "tb_endereco")
 public class Endereco {
     @Id
     private String cep;

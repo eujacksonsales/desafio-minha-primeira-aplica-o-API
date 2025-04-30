@@ -2,7 +2,7 @@ package dio.minha_primeira_web_api.model;
 
 import jakarta.persistence.*;
 
-@Entity
+@Entity(name = "tb_usuario")
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
