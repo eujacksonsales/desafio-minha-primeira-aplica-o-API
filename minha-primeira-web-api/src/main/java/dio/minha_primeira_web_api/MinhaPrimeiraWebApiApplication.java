@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableFeignClients
+@EnableFeignClients(basePackages = "dio.minha_primeira_web_api")
 @SpringBootApplication
 public class MinhaPrimeiraWebApiApplication {
 
