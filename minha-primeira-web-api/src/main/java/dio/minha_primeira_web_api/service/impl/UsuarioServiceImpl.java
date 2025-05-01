@@ -8,7 +8,6 @@ import dio.minha_primeira_web_api.repository.UsuarioRepository;
 import dio.minha_primeira_web_api.service.UsuarioService;
 import dio.minha_primeira_web_api.service.ViaCepService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,9 +24,9 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Autowired
     private ViaCepService viaCepService;
-
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+//
+//    @Autowired
+//    private PasswordEncoder passwordEncoder;
 
 
     @Override
@@ -92,13 +91,13 @@ public class UsuarioServiceImpl implements UsuarioService {
         Usuario usuario = usuarioRepository.findById(id)
                 .orElseThrow(() -> new BusinessException("Usuário não encontrado"));
 
-        // Comparar senha fornecida com a senha criptografada no banco
-        if (!passwordEncoder.matches(senhaAntiga, usuario.getSenha())) {
-            throw new BusinessException("Senha antiga incorreta");
-        }
-
-        // Criptografar a nova senha antes de salvar
-        usuario.setSenha(passwordEncoder.encode(senhaNova));
+//        // Comparar senha fornecida com a senha criptografada no banco
+//        if (!passwordEncoder.matches(senhaAntiga, usuario.getSenha())) {
+//            throw new BusinessException("Senha antiga incorreta");
+//        }
+//
+//        // Criptografar a nova senha antes de salvar
+//        usuario.setSenha(passwordEncoder.encode(senhaNova));
         usuarioRepository.save(usuario);
     }
 
