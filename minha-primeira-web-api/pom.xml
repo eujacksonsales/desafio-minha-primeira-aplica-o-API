@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.8</version>
+		<version>3.1.12</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dio</groupId>
@@ -31,6 +31,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<start-class>dio.minha_primeira_web_api.MinhaPrimeiraWebApiApplication</start-class>
+<!--		<spring-cloud.version>2024.0.0</spring-cloud.version>-->
 	</properties>
 	<dependencies>
 		<!-- Spring Web DOCUMENTACAO -->
