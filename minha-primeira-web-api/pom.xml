@@ -59,16 +59,16 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- JPA DOCUMENTACAO -->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 		<!-- H2 DataBase DOCUMENTACAO -->
-<!--		<dependency>-->
-<!--			<groupId>com.h2database</groupId>-->
-<!--			<artifactId>h2</artifactId>-->
-<!--			<scope>runtime</scope>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 <!--		&lt;!&ndash; Postgres DataBase DOCUMENTACAO &ndash;&gt;-->
 <!--		<dependency>-->
 <!--			<groupId>org.postgresql</groupId>-->
