@@ -24,3 +24,8 @@ management:
       base-path: /
       exposure:
         include: health
+
+server:
+  tomcat:
+    threads:
+      min-spare: 3
